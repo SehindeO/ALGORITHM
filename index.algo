@@ -1,0 +1,27 @@
+ALGORITHM Checkpoint
+VAR Sentence;
+    Sentence: STRING;
+    SLength, NbWords, NbVowels,i,j,k: INTEGER;
+
+BEGIN
+    read(Sentence)
+
+WHILE (Sentence[i] <> ".") DO
+    SLength:=SLength+1;
+    i=i+1;
+END_WHILE
+
+WHILE (J<SLength) DO
+    IF (Sentence[J]=" ") THEN
+    NbWords: =NbWords+1
+    j:=j+1;
+    END_IF
+
+WHILE (k<SLength)
+IF (Sentence[k]="a"  OR Sentence[k]="e" OR Sentence[k]="i"OR Sentence[k]="o" OR Sentence[k]="u") THEN
+    NbVowels:=NbVowels+1;
+    k:=k+1;
+END_IF
+END_WHILE
+    write(SLength,NbWords,NbVowels);
+END
